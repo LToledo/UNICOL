@@ -1,0 +1,19 @@
+To install mysql database: sudo apt-get install mysql-client mysql-server mysql-common
+(http://www.cyberciti.biz/faq/linux-completely-reinstall-mysql-server/)
+
+To remove: (http://www.cyberciti.biz/faq/uninstall-mysql-ubuntu-linux-command/)
+
+
+To start create the user and the database: sudo mysql -u root -p
+(password: sem nada.. enter só e siga!!!)
+
+
+user: user1
+password: password1
+database name on mysql: UNICOL
+
+
+To start the database directly: mysql -u user1 -p UNICOL
+(password: password1)
+
+
