@@ -67,10 +67,11 @@ create table Equipments (
 	id_date		int references Date (date_id) on delete cascade on update cascade,
 	id_status	int references Status(status_id) on delete cascade on update cascade,
 	code		varchar(45) not null,
+	observations	varchar(255) not null,
 	primary key 	(equipments_id)
 );
 
-create table Equipments (equipments_id int not null auto_increment,id_location int references Location (location_id) on delete cascade on update cascade,id_family int references Family (family_id) on delete cascade on update cascade,id_category int references Category (category_id) on delete cascade on update cascade,id_date int references Date (date_id) on delete cascade on update cascade,id_status int references Status(status_id) on delete cascade on update cascade,code varchar(45) not null,primary key(equipments_id));
+create table Equipments (equipments_id int not null auto_increment,id_location int references Location (location_id) on delete cascade on update cascade,id_family int references Family (family_id) on delete cascade on update cascade,id_category int references Category (category_id) on delete cascade on update cascade,id_date int references Date (date_id) on delete cascade on update cascade,id_status int references Status(status_id) on delete cascade on update cascade,code varchar(45) not null,observations varchar(255) not null,primary key(equipments_id));
 
 
 
@@ -82,10 +83,11 @@ create table Historic (
 	id_date		int references Date (date_id) on delete cascade on update cascade,
 	id_status	int references Status(status_id) on delete cascade on update cascade,
 	code		varchar(45) not null,
+	observations	varchar(255) not null,
 	primary key 	(historic_id)
 );
 
-create table Historic (historic_id int not null auto_increment,id_location int references Location (location_id) on delete cascade on update cascade,id_family int references Family (family_id) on delete cascade on update cascade,id_category int references Category (category_id) on delete cascade on update cascade,id_date int references Date (date_id) on delete cascade on update cascade,id_status int references Status(status_id) on delete cascade on update cascade,code varchar(45) not null,primary key (historic_id));
+create table Historic (historic_id int not null auto_increment,id_location int references Location (location_id) on delete cascade on update cascade,id_family int references Family (family_id) on delete cascade on update cascade,id_category int references Category (category_id) on delete cascade on update cascade,id_date int references Date (date_id) on delete cascade on update cascade,id_status int references Status(status_id) on delete cascade on update cascade,code varchar(45) not null,observations varchar(255) not null,primary key (historic_id));
 
 
 
