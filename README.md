@@ -1,4 +1,5 @@
 # UNICOL
-Software Project - Inventário
+Software Project - Inventário de Gestão Informática
 
-Vamos lá ver se isto corre bem!!!
+## Version
+Alpha 1
